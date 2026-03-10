@@ -1,0 +1,28 @@
+name: height_sensor_usb
+description: Flutter package for USB serial communication with VL53L0X height sensor
+version: 1.0.0
+homepage: https://github.com/your-repo/height_sensor_usb
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  usb_serial: ^0.5.0
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.7
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.height_sensor_usb
+        pluginClass: HeightSensorUsbPlugin
