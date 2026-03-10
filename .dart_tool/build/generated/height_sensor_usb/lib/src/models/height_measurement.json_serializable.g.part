@@ -1,0 +1,21 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+HeightMeasurement _$HeightMeasurementFromJson(Map<String, dynamic> json) =>
+    HeightMeasurement(
+      distanceCm: (json['distance_cm'] as num).toDouble(),
+      distanceMm: (json['distance_mm'] as num).toInt(),
+      timestamp: (json['timestamp'] as num).toInt(),
+      isValid: json['is_valid'] as bool? ?? true,
+      error: json['error'] as String?,
+    );
+
+Map<String, dynamic> _$HeightMeasurementToJson(HeightMeasurement instance) =>
+    <String, dynamic>{
+      'distance_cm': instance.distanceCm,
+      'distance_mm': instance.distanceMm,
+      'timestamp': instance.timestamp,
+      'is_valid': instance.isValid,
+      'error': instance.error,
+    };

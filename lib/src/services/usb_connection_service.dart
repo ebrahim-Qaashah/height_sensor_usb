@@ -114,10 +114,10 @@ class UsbConnectionService {
     if (_port == null) return null;
     
     return {
-      'vid': _port!.device.vid,
-      'pid': _port!.device.pid,
-      'productName': _port!.device.productName,
-      'serialNumber': _port!.device.serialNumber,
+      'vid': _port!.vid,
+      'pid': _port!.pid,
+      'productName': _port!.productName,
+      'serialNumber': _port!.serialNumber,
     };
   }
   

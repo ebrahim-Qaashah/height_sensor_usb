@@ -4,7 +4,7 @@ version: 1.0.0
 homepage: https://github.com/ebrahim-Qaashah/height_sensor_usb
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ^3.8.0
   flutter: ">=3.0.0"
 
 dependencies:

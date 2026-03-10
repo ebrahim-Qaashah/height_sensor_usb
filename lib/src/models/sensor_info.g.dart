@@ -1,0 +1,26 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'sensor_info.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+SensorInfo _$SensorInfoFromJson(Map<String, dynamic> json) => SensorInfo(
+      deviceName: json['name'] as String,
+      version: json['version'] as String,
+      sensorType: json['sensor'] as String,
+      deviceId: json['device_id'] as String?,
+      manufacturer: json['manufacturer'] as String?,
+      model: json['model'] as String?,
+    );
+
+Map<String, dynamic> _$SensorInfoToJson(SensorInfo instance) =>
+    <String, dynamic>{
+      'name': instance.deviceName,
+      'version': instance.version,
+      'sensor': instance.sensorType,
+      'device_id': instance.deviceId,
+      'manufacturer': instance.manufacturer,
+      'model': instance.model,
+    };
