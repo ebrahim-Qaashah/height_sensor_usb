@@ -109,18 +109,6 @@ class UsbConnectionService {
   /// Check if connected
   bool get isConnected => _status == ConnectionStatus.connected;
   
-  /// Get device info if connected
-  Map<String, dynamic>? getDeviceInfo() {
-    if (_port == null) return null;
-    
-    return {
-      'vid': _port!.vid,
-      'pid': _port!.pid,
-      'productName': _port!.productName,
-      'serialNumber': _port!.serialNumber,
-    };
-  }
-  
   /// Disconnect from device
   Future<void> disconnect() async {
     try {
